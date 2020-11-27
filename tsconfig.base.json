@@ -24,11 +24,14 @@
       "@mymessage/client/util-message": [
         "libs/client/util-message/src/index.ts"
       ],
-      "@mymessage/client/util-peers": ["libs/client/util-peers/src/index.ts"],
       "@mymessage/client/feature-message": [
         "libs/client/feature-message/src/index.ts"
       ],
-      "@mymessage/client/shell": ["libs/client/shell/src/index.ts"]
+      "@mymessage/client/shell": ["libs/client/shell/src/index.ts"],
+      "@mymessage/client/feature-meeting": [
+        "libs/client/feature-meeting/src/index.ts"
+      ],
+      "@mymessage/client/util-peer": ["libs/client/util-peer/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

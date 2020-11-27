@@ -19,6 +19,22 @@ export class UserEffects {
     )
   );
 
+  // selectUser$ = createEffect(() =>
+  //   this.actions$.pipe(
+  //     ofType(UserActions.selectUser),
+  //     switchMap((action) =>
+  //       this.userDataService.select(action.id).pipe(
+  //         map((user) => {
+  //           console.log('effects: ', user);
+
+  //           return UserActions.selectUserSuccess({ user })
+  //         }),
+  //         catchError((error) => of(UserActions.selectUserFailure({ error })))
+  //       )
+  //     )
+  //   )
+  // );
+
   constructor(
     private actions$: Actions,
     private userDataService: UserDataService

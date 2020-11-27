@@ -1,9 +1,13 @@
 <h1>client-account</h1>
 
+<pre>{{ selectedUser$ | async | json }}</pre>
 <table class="table">
   <tr *ngFor="let user of userList$ | async">
     <td>{{ user.id }}</td>
     <td>{{ user.name }}</td>
     <td>{{ user.description }}</td>
+    <td>
+      <button type="button" (click)="select(user)">O</button>
+    </td>
   </tr>
 </table>

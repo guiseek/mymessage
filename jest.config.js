@@ -8,5 +8,7 @@ module.exports = {
     '<rootDir>/libs/client/util-peers',
     '<rootDir>/libs/client/feature-message',
     '<rootDir>/libs/client/shell',
+    '<rootDir>/libs/client/feature-meeting',
+    '<rootDir>/libs/client/util-peer',
   ],
 };

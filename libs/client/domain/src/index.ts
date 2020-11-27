@@ -13,3 +13,10 @@ export * from './lib/infrastructure/message.data.service';
 export * from './lib/+state/message/message.actions';
 
 export * from './lib/application/message.facade';
+
+export * from './lib/entities/room';
+export * from './lib/infrastructure/room.data.service';
+
+export * from './lib/+state/room/room.actions';
+
+export * from './lib/application/meeting.facade';

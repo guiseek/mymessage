@@ -12,3 +12,18 @@ export const loadUserFailure = createAction(
   '[User] Load User Failure',
   props<{ error: any }>()
 );
+
+export const selectUser = createAction(
+  '[User] Select User',
+  props<{ id: number }>()
+);
+
+export const selectUserSuccess = createAction(
+  '[User] Load User Success',
+  props<{ user: User }>()
+);
+
+export const selectUserFailure = createAction(
+  '[User] Load User Failure',
+  props<{ error: any }>()
+);

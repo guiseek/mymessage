@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { AccountFacade, loadUser } from '@mymessage/client/domain';
+import {
+  User,
+  loadUser,
+  selectUser,
+  AccountFacade,
+} from '@mymessage/client/domain';
 
 @Component({
   selector: 'client-account',
@@ -8,7 +13,7 @@ import { AccountFacade, loadUser } from '@mymessage/client/domain';
 })
 export class AccountComponent implements OnInit {
   userList$ = this.accountFacade.userList$;
-
+  selectedUser$ = this.accountFacade.selectedUser$;
   constructor(private accountFacade: AccountFacade) {}
 
   ngOnInit() {
@@ -17,5 +22,9 @@ export class AccountComponent implements OnInit {
 
   load(): void {
     this.accountFacade.dispatch(loadUser());
+  }
+  select({ id }: Pick<User, 'id'>) {
+    console.log({ id });
+    this.accountFacade.dispatch(selectUser({ id }));
   }
 }

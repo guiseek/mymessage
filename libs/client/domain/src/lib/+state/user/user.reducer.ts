@@ -15,11 +15,18 @@ export interface State extends EntityState<User> {
 export interface UserPartialState {
   readonly [USER_FEATURE_KEY]: State;
 }
-
-export const userAdapter: EntityAdapter<User> = createEntityAdapter<User>();
+export function selectUserId(a: User): number {
+  //In this case this would be optional since primary key is id
+  return a.id;
+}
+export const userAdapter: EntityAdapter<User> = createEntityAdapter<User>({
+  // selectId: selectUserId,
+  // sortComparer
+});
 
 export const initialState: State = userAdapter.getInitialState({
   // set initial required properties
+  // selectedId: null,
   loaded: false,
 });
 

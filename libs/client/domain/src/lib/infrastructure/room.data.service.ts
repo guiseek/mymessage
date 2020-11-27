@@ -1,47 +1,44 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
-import { User } from '../entities/user';
-import { map } from 'rxjs/operators';
+import { Observable, of, BehaviorSubject } from 'rxjs';
+import { Room } from '../entities/room';
 
 @Injectable({ providedIn: 'root' })
-export class UserDataService {
+export class RoomDataService {
+  rooms = new BehaviorSubject<Room[]>([]);
+  rooms$ = this.rooms.asObservable();
+
   constructor(private http: HttpClient) {}
 
-  load(): Observable<User[]> {
+  load(): Observable<Room[]> {
     // Uncomment if needed
     /*
         const url = '...';
         const params = new HttpParams().set('param', 'value');
         const headers = new HttpHeaders().set('Accept', 'application/json');
-        return this.http.get<User[]>(url, {params, headers});
+        return this.http.get<Room[]>(url, {params, headers});
         */
 
-    return of([
-      {
-        id: 1,
-        name: 'Lorem ipsum',
-        username: 'guione',
-        location: [-0, -0],
-        description: 'Lorem ipsum dolor sit amet',
-      },
+    this.rooms.next([
+      { id: 1, name: 'Lorem ipsum', description: 'Lorem ipsum dolor sit amet' },
       {
         id: 2,
         name: 'At vero eos',
-        username: 'guitwo',
-        location: [-0, -0],
         description: 'At vero eos et accusam et justo duo dolores',
       },
       {
         id: 3,
         name: 'Duis autem',
-        username: 'guithree',
-        location: [-0, -0],
         description: 'Duis autem vel eum iriure dolor in hendrerit',
       },
     ]);
+    return this.rooms$;
   }
-  select(id: number) {
-    return this.load().pipe(map((users) => users.find((u) => u.id === id)));
+
+  create(room: Room) {
+    console.log(room);
+
+    this.rooms.next([...this.rooms.value, room]);
+    return this.rooms$;
   }
 }

@@ -42,14 +42,17 @@
     "client-util-message": {
       "tags": ["domain:client", "type:util"]
     },
-    "client-util-peers": {
-      "tags": ["domain:client", "type:util"]
-    },
     "client-feature-message": {
       "tags": ["domain:client", "type:feature"]
     },
     "client-shell": {
       "tags": ["type:shell"]
+    },
+    "client-feature-meeting": {
+      "tags": ["domain:client", "type:feature"]
+    },
+    "client-util-peer": {
+      "tags": ["domain:client", "type:util"]
     }
   }
 }

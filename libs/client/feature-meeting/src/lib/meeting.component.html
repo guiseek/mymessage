@@ -1,0 +1,9 @@
+<h1>client-meeting</h1>
+
+<table class="table">
+  <tr *ngFor="let room of roomList$ | async">
+    <td>{{ room.id }}</td>
+    <td>{{ room.name }}</td>
+    <td>{{ room.description }}</td>
+  </tr>
+</table>

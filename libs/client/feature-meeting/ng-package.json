@@ -1,6 +1,6 @@
 {
   "$schema": "../../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../../dist/libs/client/util-peers",
+  "dest": "../../../dist/libs/client/feature-meeting",
   "lib": {
     "entryFile": "src/index.ts"
   }

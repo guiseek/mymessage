@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'client-util-peers',
+  displayName: 'client-feature-meeting',
   preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
@@ -14,7 +14,7 @@ module.exports = {
       },
     },
   },
-  coverageDirectory: '../../../coverage/libs/client/util-peers',
+  coverageDirectory: '../../../coverage/libs/client/feature-meeting',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

@@ -6,6 +6,8 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { MessageEffects } from './+state/message/message.effects';
 import * as fromMessage from './+state/message/message.reducer';
+import { RoomEffects } from './+state/room/room.effects';
+import * as fromRoom from './+state/room/room.reducer';
 
 @NgModule({
   imports: [
@@ -17,6 +19,8 @@ import * as fromMessage from './+state/message/message.reducer';
       fromMessage.reducer
     ),
     EffectsModule.forFeature([MessageEffects]),
+    StoreModule.forFeature(fromRoom.ROOM_FEATURE_KEY, fromRoom.reducer),
+    EffectsModule.forFeature([RoomEffects]),
   ],
 })
 export class ClientDomainModule {}
