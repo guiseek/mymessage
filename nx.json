@@ -47,6 +47,9 @@
     },
     "client-feature-message": {
       "tags": ["domain:client", "type:feature"]
+    },
+    "client-shell": {
+      "tags": ["type:shell"]
     }
   }
 }

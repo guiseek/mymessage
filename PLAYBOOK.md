@@ -1,5 +1,5 @@
 ```bash
-➜  mymessage git:(master) ✗ nx add @nrwl/angular                                                          
+➜  mymessage git:(master) ✗ nx add @nrwl/angular
 Installing packages for tooling via npm.
 Installed packages for tooling via npm.
 ? Which Unit Test Runner would you like to use for the application? Jest  [ https://jestjs.io ]
@@ -12,9 +12,10 @@ UPDATE .vscode/extensions.json (200 bytes)
 ✔ Packages installed successfully.
 
 ```
+
 ```bash
 
-➜  mymessage git:(master) ✗ npm i --save-dev @ngrx/schematics                                        
+➜  mymessage git:(master) ✗ npm i --save-dev @ngrx/schematics
 npm WARN codelyzer@5.0.1 requires a peer of @angular/compiler@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
 npm WARN codelyzer@5.0.1 requires a peer of @angular/core@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
 npm WARN codelyzer@5.0.1 requires a peer of tslint@^5.0.0 but none is installed. You must install peer dependencies yourself.
@@ -29,6 +30,7 @@ found 1 high severity vulnerability
   run `npm audit fix` to fix them, or `npm audit` for details
 
 ```
+
 ```bash
 
   ➜  mymessage git:(master) ✗ nx generate @angular-architects/ddd:domain --name=client --addApp --ngrx --no-interactive --dry-run
@@ -86,9 +88,10 @@ UPDATE jest.config.js (93 bytes)
 NOTE: The "dryRun" flag means no changes were made.
 
 ```
+
 ```bash
 
-➜  mymessage git:(master) ✗ nx generate @angular-architects/ddd:domain --name=client --addApp --ngrx --no-interactive          
+➜  mymessage git:(master) ✗ nx generate @angular-architects/ddd:domain --name=client --addApp --ngrx --no-interactive
 CREATE tslint.json (2453 bytes)
 CREATE libs/client/domain/README.md (150 bytes)
 CREATE libs/client/domain/ng-package.json (169 bytes)
@@ -142,6 +145,7 @@ UPDATE jest.config.js (93 bytes)
 ✔ Packages installed successfully.
 ✔ Packages installed successfully.
 ```
+
 ```bash
 > Executing task: ng generate @angular-architects/ddd:feature --name=acc --no-interactive --dry-run <
 
@@ -153,6 +157,7 @@ The terminal process "/bin/bash '-l', '-c', '/Users/guiseek/dev/projects/mymessa
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 > Executing task: ng generate @angular-architects/ddd:feature --name=account --domain=client --no-interactive --dry-run <
 
@@ -185,6 +190,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:feature --name=account --domain=client --app=client --no-interactive --dry-run <
@@ -218,6 +224,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:feature --name=account --domain=client --app=client --entity=user --no-interactive --dry-run <
@@ -253,6 +260,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:feature --name=account --domain=client --app=client --entity=user --ngrx --no-interactive --dry-run <
@@ -293,6 +301,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:feature --name=account --domain=client --app=client --entity=user --lazy --ngrx --no-interactive --dry-run <
@@ -332,6 +341,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:feature --name=account --domain=client --app=client --entity=user --lazy --ngrx <
@@ -370,6 +380,7 @@ UPDATE libs/client/domain/src/lib/client-domain.module.ts (482 bytes)
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:ui --name=peer --no-interactive --dry-run <
@@ -405,6 +416,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:ui --name=message --domain=client --no-interactive --dry-run <
@@ -432,30 +444,33 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:ui --name=message --domain=client --shared --no-interactive --dry-run <
 
-A UI library should either belong to a specific domain or be shared globally. 
-      If you want to share a UI library across multiple specific domains, 
+A UI library should either belong to a specific domain or be shared globally.
+      If you want to share a UI library across multiple specific domains,
       consider using an API library. Hence, you should not provide the shared option in combination
       with the domain option.
 The terminal process "/bin/bash '-l', '-c', '/Users/guiseek/dev/projects/mymessage/node_modules/.bin/ng generate @angular-architects/ddd:ui --name=message --domain=client --shared --no-interactive --dry-run', 'ng generate @angular-architects/ddd:ui --name=message --domain=client --shared --no-interactive --dry-run'" terminated with exit code: 1.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:ui --name=message --directory=shared --domain=client --shared --no-interactive --dry-run <
 
-A UI library should either belong to a specific domain or be shared globally. 
-      If you want to share a UI library across multiple specific domains, 
+A UI library should either belong to a specific domain or be shared globally.
+      If you want to share a UI library across multiple specific domains,
       consider using an API library. Hence, you should not provide the shared option in combination
       with the domain option.
 The terminal process "/bin/bash '-l', '-c', '/Users/guiseek/dev/projects/mymessage/node_modules/.bin/ng generate @angular-architects/ddd:ui --name=message --directory=shared --domain=client --shared --no-interactive --dry-run', 'ng generate @angular-architects/ddd:ui --name=message --directory=shared --domain=client --shared --no-interactive --dry-run'" terminated with exit code: 1.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:ui --name=message --directory=shared --domain=client --no-interactive --dry-run <
@@ -483,6 +498,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:ui --name=message --domain=client --no-interactive --dry-run <
@@ -510,6 +526,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:ui --name=message --domain=client <
@@ -536,6 +553,7 @@ UPDATE jest.config.js (191 bytes)
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:util --name=rt --no-interactive --dry-run <
@@ -546,6 +564,7 @@ The terminal process "/bin/bash '-l', '-c', '/Users/guiseek/dev/projects/mymessa
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:util --name=rtc --domain=client --no-interactive --dry-run <
@@ -573,18 +592,20 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:util --name=rtc --domain=client --shared --no-interactive --dry-run <
 
-A UI library should either belong to a specific domain or be shared globally. 
-      If you want to share a UI library across multiple specific domains, 
+A UI library should either belong to a specific domain or be shared globally.
+      If you want to share a UI library across multiple specific domains,
       consider using an API library. Hence, you should not provide the shared option in combination
       with the domain option.
 The terminal process "/bin/bash '-l', '-c', '/Users/guiseek/dev/projects/mymessage/node_modules/.bin/ng generate @angular-architects/ddd:util --name=rtc --domain=client --shared --no-interactive --dry-run', 'ng generate @angular-architects/ddd:util --name=rtc --domain=client --shared --no-interactive --dry-run'" terminated with exit code: 1.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:util --name=rtc --domain=client --no-interactive --dry-run <
@@ -612,6 +633,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:util --name=connection --domain=client --no-interactive --dry-run <
@@ -639,6 +661,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:util --name=peer --domain=client --no-interactive --dry-run <
@@ -666,6 +689,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:util --name=webrtc --domain=client --no-interactive --dry-run <
@@ -693,6 +717,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:util --name=message --domain=client --no-interactive --dry-run <
@@ -720,6 +745,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:util --name=message --domain=client <
@@ -746,6 +772,7 @@ UPDATE jest.config.js (233 bytes)
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:util --name=peers --domain=client --no-interactive --dry-run <
@@ -773,6 +800,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:util --name=peers --domain=client <
@@ -799,6 +827,7 @@ UPDATE jest.config.js (273 bytes)
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:feature --name=message --no-interactive --dry-run <
@@ -811,6 +840,7 @@ The terminal process "/bin/bash '-l', '-c', '/Users/guiseek/dev/projects/mymessa
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:feature --name=message --domain=client --no-interactive --dry-run <
@@ -844,6 +874,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:feature --name=message --domain=client --app=client --no-interactive --dry-run <
@@ -877,6 +908,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:feature --name=message --domain=client --app=client --entity=message --no-interactive --dry-run <
@@ -912,6 +944,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:feature --name=message --domain=client --app=client --entity=message --lazy --ngrx --no-interactive --dry-run <
@@ -951,6 +984,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 
 > Executing task: ng generate @angular-architects/ddd:feature --name=message --domain=client --app=client --entity=message --lazy --ngrx <
@@ -1010,6 +1044,7 @@ NOTE: The "dryRun" flag means no changes were made.
 
 Terminal will be reused by tasks, press any key to close it.
 ```
+
 ```bash
 > Executing task: ng generate @schematics/angular:appShell --clientProject=client <
 
@@ -1026,6 +1061,210 @@ UPDATE angular.json (13277 bytes)
 UPDATE apps/client/src/main.ts (437 bytes)
 UPDATE apps/client/src/app/app.module.ts (1325 bytes)
 ✔ Packages installed successfully.
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+```bash
+> Executing task: ng generate @nrwl/angular:library --name=shell --style=scss --directory=client --lazy --parentModule=apps/client/src/app/app.module.ts --routing --no-interactive --dry-run <
+
+CREATE libs/client/shell/README.md (148 bytes)
+CREATE libs/client/shell/tsconfig.lib.json (465 bytes)
+CREATE libs/client/shell/tslint.json (253 bytes)
+CREATE libs/client/shell/src/index.ts (43 bytes)
+CREATE libs/client/shell/src/lib/client-shell.module.ts (339 bytes)
+CREATE libs/client/shell/tsconfig.json (200 bytes)
+CREATE libs/client/shell/jest.config.js (759 bytes)
+CREATE libs/client/shell/tsconfig.spec.json (236 bytes)
+CREATE libs/client/shell/src/test-setup.ts (30 bytes)
+UPDATE package.json (2393 bytes)
+UPDATE angular.json (14132 bytes)
+UPDATE nx.json (1238 bytes)
+UPDATE tsconfig.base.json (1120 bytes)
+UPDATE .vscode/extensions.json (200 bytes)
+UPDATE jest.config.js (353 bytes)
+UPDATE apps/client/src/app/app.module.ts (1123 bytes)
+
+NOTE: The "dryRun" flag means no changes were made.
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+```bash
+> Executing task: ng generate @nrwl/angular:library --name=shell --style=scss --directory=client --lazy --parentModule=apps/client/src/app/app.module.ts --routing --tags=type:shell --no-interactive --dry-run <
+
+CREATE libs/client/shell/README.md (148 bytes)
+CREATE libs/client/shell/tsconfig.lib.json (465 bytes)
+CREATE libs/client/shell/tslint.json (253 bytes)
+CREATE libs/client/shell/src/index.ts (43 bytes)
+CREATE libs/client/shell/src/lib/client-shell.module.ts (339 bytes)
+CREATE libs/client/shell/tsconfig.json (200 bytes)
+CREATE libs/client/shell/jest.config.js (759 bytes)
+CREATE libs/client/shell/tsconfig.spec.json (236 bytes)
+CREATE libs/client/shell/src/test-setup.ts (30 bytes)
+UPDATE package.json (2393 bytes)
+UPDATE angular.json (14132 bytes)
+UPDATE nx.json (1250 bytes)
+UPDATE tsconfig.base.json (1120 bytes)
+UPDATE .vscode/extensions.json (200 bytes)
+UPDATE jest.config.js (353 bytes)
+UPDATE apps/client/src/app/app.module.ts (1123 bytes)
+
+NOTE: The "dryRun" flag means no changes were made.
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+```bash
+> Executing task: ng generate @nrwl/angular:library --name=shell --style=scss --directory=client --lazy --parentModule=apps/client/src/app/app.module.ts --routing --tags=type:shell <
+
+CREATE libs/client/shell/README.md (148 bytes)
+CREATE libs/client/shell/tsconfig.lib.json (465 bytes)
+CREATE libs/client/shell/tslint.json (253 bytes)
+CREATE libs/client/shell/src/index.ts (43 bytes)
+CREATE libs/client/shell/src/lib/client-shell.module.ts (339 bytes)
+CREATE libs/client/shell/tsconfig.json (200 bytes)
+CREATE libs/client/shell/jest.config.js (759 bytes)
+CREATE libs/client/shell/tsconfig.spec.json (236 bytes)
+CREATE libs/client/shell/src/test-setup.ts (30 bytes)
+UPDATE package.json (2393 bytes)
+UPDATE angular.json (14132 bytes)
+UPDATE nx.json (1250 bytes)
+UPDATE tsconfig.base.json (1120 bytes)
+UPDATE .vscode/extensions.json (200 bytes)
+UPDATE jest.config.js (353 bytes)
+UPDATE apps/client/src/app/app.module.ts (1123 bytes)
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+```bash
+> Executing task: ng generate @schematics/angular:component --name=client-shell --no-interactive --dry-run <
+
+CREATE libs/client/domain/src/lib/client-shell/client-shell.component.scss (0 bytes)
+CREATE libs/client/domain/src/lib/client-shell/client-shell.component.html (27 bytes)
+CREATE libs/client/domain/src/lib/client-shell/client-shell.component.spec.ts (662 bytes)
+CREATE libs/client/domain/src/lib/client-shell/client-shell.component.ts (302 bytes)
+UPDATE libs/client/domain/src/lib/client-domain.module.ts (854 bytes)
+
+NOTE: The "dryRun" flag means no changes were made.
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+```bash
+
+> Executing task: ng generate @schematics/angular:component --name=client-shell --project=client-shell --no-interactive --dry-run <
+
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.scss (0 bytes)
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.html (27 bytes)
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.spec.ts (662 bytes)
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.ts (305 bytes)
+UPDATE libs/client/shell/src/lib/client-shell.module.ts (457 bytes)
+
+NOTE: The "dryRun" flag means no changes were made.
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+```bash
+
+> Executing task: ng generate @schematics/angular:component --name=client-shell --project=client-shell --style=scss --no-interactive --dry-run <
+
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.scss (0 bytes)
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.html (27 bytes)
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.spec.ts (662 bytes)
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.ts (305 bytes)
+UPDATE libs/client/shell/src/lib/client-shell.module.ts (457 bytes)
+
+NOTE: The "dryRun" flag means no changes were made.
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+```bash
+
+> Executing task: ng generate @schematics/angular:component --name=client-shell --project=client-shell --style=scss --changeDetection=OnPush --no-interactive --dry-run <
+
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.scss (0 bytes)
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.html (27 bytes)
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.spec.ts (662 bytes)
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.ts (381 bytes)
+UPDATE libs/client/shell/src/lib/client-shell.module.ts (457 bytes)
+
+NOTE: The "dryRun" flag means no changes were made.
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+```bash
+
+> Executing task: ng generate @schematics/angular:component --name=client-shell --project=client-shell --style=scss --changeDetection=OnPush --displayBlock --no-interactive --dry-run <
+
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.scss (28 bytes)
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.html (27 bytes)
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.spec.ts (662 bytes)
+CREATE libs/client/shell/src/lib/client-shell/client-shell.component.ts (381 bytes)
+UPDATE libs/client/shell/src/lib/client-shell.module.ts (457 bytes)
+
+NOTE: The "dryRun" flag means no changes were made.
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+```bash
+
+> Executing task: ng generate @schematics/angular:component --name=client-shell --project=client-shell --style=scss --changeDetection=OnPush --displayBlock --flat --no-interactive --dry-run <
+
+CREATE libs/client/shell/src/lib/client-shell.component.scss (28 bytes)
+CREATE libs/client/shell/src/lib/client-shell.component.html (27 bytes)
+CREATE libs/client/shell/src/lib/client-shell.component.spec.ts (662 bytes)
+CREATE libs/client/shell/src/lib/client-shell.component.ts (381 bytes)
+UPDATE libs/client/shell/src/lib/client-shell.module.ts (444 bytes)
+
+NOTE: The "dryRun" flag means no changes were made.
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+```bash
+
+> Executing task: ng generate @schematics/angular:component --name=client-shell --project=client-shell --style=scss --changeDetection=OnPush --displayBlock --flat --skipSelector --no-interactive --dry-run <
+
+CREATE libs/client/shell/src/lib/client-shell.component.scss (28 bytes)
+CREATE libs/client/shell/src/lib/client-shell.component.html (27 bytes)
+CREATE libs/client/shell/src/lib/client-shell.component.spec.ts (662 bytes)
+CREATE libs/client/shell/src/lib/client-shell.component.ts (343 bytes)
+UPDATE libs/client/shell/src/lib/client-shell.module.ts (444 bytes)
+
+NOTE: The "dryRun" flag means no changes were made.
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+```bash
+
+> Executing task: ng generate @schematics/angular:component --name=client-shell --project=client-shell --style=scss --changeDetection=OnPush --displayBlock --flat --skipSelector --type=Container --no-interactive --dry-run <
+
+CREATE libs/client/shell/src/lib/client-shell.container.scss (28 bytes)
+CREATE libs/client/shell/src/lib/client-shell.container.html (27 bytes)
+CREATE libs/client/shell/src/lib/client-shell.container.spec.ts (662 bytes)
+CREATE libs/client/shell/src/lib/client-shell.container.ts (343 bytes)
+UPDATE libs/client/shell/src/lib/client-shell.module.ts (444 bytes)
+
+NOTE: The "dryRun" flag means no changes were made.
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+```bash
+> Executing task: ng generate @schematics/angular:component --name=client-shell --project=client-shell --style=scss --changeDetection=OnPush --displayBlock --flat --skipSelector --type=Container <
+
+CREATE libs/client/shell/src/lib/client-shell.container.scss (28 bytes)
+CREATE libs/client/shell/src/lib/client-shell.container.html (27 bytes)
+CREATE libs/client/shell/src/lib/client-shell.container.spec.ts (662 bytes)
+CREATE libs/client/shell/src/lib/client-shell.container.ts (343 bytes)
+UPDATE libs/client/shell/src/lib/client-shell.module.ts (444 bytes)
 
 Terminal will be reused by tasks, press any key to close it.
 ```

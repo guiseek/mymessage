@@ -15,6 +15,13 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     RouterModule.forRoot(
       [
+        {
+          path: '',
+          loadChildren: () =>
+            import('@mymessage/client/shell').then(
+              (module) => module.ClientShellModule
+            ),
+        },
       ],
       { initialNavigation: 'enabled' }
     ),

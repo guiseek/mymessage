@@ -27,7 +27,8 @@
       "@mymessage/client/util-peers": ["libs/client/util-peers/src/index.ts"],
       "@mymessage/client/feature-message": [
         "libs/client/feature-message/src/index.ts"
-      ]
+      ],
+      "@mymessage/client/shell": ["libs/client/shell/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

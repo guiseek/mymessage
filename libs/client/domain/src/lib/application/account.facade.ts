@@ -11,7 +11,7 @@ export class AccountFacade {
   userList$ = this.store.pipe(select(UserSelectors.getAllUser));
   selectedUser$ = this.store.pipe(select(UserSelectors.getSelected));
 
-  constructor(private store: Store<fromUser.UserPartialState>) { }
+  constructor(private store: Store<fromUser.UserPartialState>) {}
 
   dispatch(action: Action) {
     this.store.dispatch(action);

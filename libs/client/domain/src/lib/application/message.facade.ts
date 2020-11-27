@@ -11,7 +11,7 @@ export class MessageFacade {
   messageList$ = this.store.pipe(select(MessageSelectors.getAllMessage));
   selectedMessage$ = this.store.pipe(select(MessageSelectors.getSelected));
 
-  constructor(private store: Store<fromMessage.MessagePartialState>) { }
+  constructor(private store: Store<fromMessage.MessagePartialState>) {}
 
   dispatch(action: Action) {
     this.store.dispatch(action);

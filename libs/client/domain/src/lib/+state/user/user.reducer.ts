@@ -7,9 +7,9 @@ import { User } from '../../entities/user';
 export const USER_FEATURE_KEY = 'user';
 
 export interface State extends EntityState<User> {
-  selectedId ?: string | number;          // which User record has been selected
-  loaded      : boolean;                  // has the User list been loaded
-  error      ?: string | null;            // last known error (if any)
+  selectedId?: string | number; // which User record has been selected
+  loaded: boolean; // has the User list been loaded
+  error?: string | null; // last known error (if any)
 }
 
 export interface UserPartialState {
@@ -20,20 +20,20 @@ export const userAdapter: EntityAdapter<User> = createEntityAdapter<User>();
 
 export const initialState: State = userAdapter.getInitialState({
   // set initial required properties
-  loaded : false
+  loaded: false,
 });
 
 const userReducer = createReducer(
   initialState,
-  on(UserActions.loadUser,
-    state => ({ ...state, loaded: false, error: null })
+  on(UserActions.loadUser, (state) => ({
+    ...state,
+    loaded: false,
+    error: null,
+  })),
+  on(UserActions.loadUserSuccess, (state, { user }) =>
+    userAdapter.upsertMany(user, { ...state, loaded: true })
   ),
-  on(UserActions.loadUserSuccess,
-    (state, { user }) => userAdapter.upsertMany(user, { ...state, loaded: true })
-  ),
-  on(UserActions.loadUserFailure,
-    (state, { error }) => ({ ...state, error })
-  ),
+  on(UserActions.loadUserFailure, (state, { error }) => ({ ...state, error }))
 );
 
 export function reducer(state: State | undefined, action: Action) {

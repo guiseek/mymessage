@@ -12,9 +12,7 @@ export class MessageEffects {
       ofType(MessageActions.loadMessage),
       switchMap((action) =>
         this.messageDataService.load().pipe(
-          map((message) =>
-            MessageActions.loadMessageSuccess({ message })
-          ),
+          map((message) => MessageActions.loadMessageSuccess({ message })),
           catchError((error) =>
             of(MessageActions.loadMessageFailure({ error }))
           )
@@ -23,8 +21,8 @@ export class MessageEffects {
     )
   );
 
- constructor(
-   private actions$: Actions,
-   private messageDataService: MessageDataService
-  ) { }
+  constructor(
+    private actions$: Actions,
+    private messageDataService: MessageDataService
+  ) {}
 }

@@ -7,5 +7,6 @@ module.exports = {
     '<rootDir>/libs/client/util-message',
     '<rootDir>/libs/client/util-peers',
     '<rootDir>/libs/client/feature-message',
+    '<rootDir>/libs/client/shell',
   ],
 };

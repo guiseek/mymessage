@@ -12,19 +12,15 @@ export class UserEffects {
       ofType(UserActions.loadUser),
       switchMap((action) =>
         this.userDataService.load().pipe(
-          map((user) =>
-            UserActions.loadUserSuccess({ user })
-          ),
-          catchError((error) =>
-            of(UserActions.loadUserFailure({ error }))
-          )
+          map((user) => UserActions.loadUserSuccess({ user })),
+          catchError((error) => of(UserActions.loadUserFailure({ error })))
         )
       )
     )
   );
 
- constructor(
-   private actions$: Actions,
-   private userDataService: UserDataService
-  ) { }
+  constructor(
+    private actions$: Actions,
+    private userDataService: UserDataService
+  ) {}
 }

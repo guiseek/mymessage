@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppShellComponent } from './app-shell.component';
+import { ClientShellContainer } from './client-shell.container';
 
-describe('AppShellComponent', () => {
-  let component: AppShellComponent;
-  let fixture: ComponentFixture<AppShellComponent>;
+describe('ClientShellContainer', () => {
+  let component: ClientShellContainer;
+  let fixture: ComponentFixture<ClientShellContainer>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [AppShellComponent],
+      declarations: [ClientShellContainer],
     }).compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AppShellComponent);
+    fixture = TestBed.createComponent(ClientShellContainer);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

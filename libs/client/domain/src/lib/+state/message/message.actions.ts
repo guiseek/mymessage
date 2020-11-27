@@ -1,9 +1,7 @@
 import { createAction, props } from '@ngrx/store';
 import { Message } from '../../entities/message';
 
-export const loadMessage = createAction(
-  '[Message] Load Message'
-);
+export const loadMessage = createAction('[Message] Load Message');
 
 export const loadMessageSuccess = createAction(
   '[Message] Load Message Success',

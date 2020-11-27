@@ -1,8 +1,16 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
-import { MESSAGE_FEATURE_KEY, State, MessagePartialState, messageAdapter } from './message.reducer';
+import {
+  MESSAGE_FEATURE_KEY,
+  State,
+  MessagePartialState,
+  messageAdapter,
+} from './message.reducer';
 
 // Lookup the 'Message' feature state managed by NgRx
-export const getMessageState = createFeatureSelector<MessagePartialState, State>(MESSAGE_FEATURE_KEY);
+export const getMessageState = createFeatureSelector<
+  MessagePartialState,
+  State
+>(MESSAGE_FEATURE_KEY);
 
 const { selectAll, selectEntities } = messageAdapter.getSelectors();
 
@@ -16,9 +24,8 @@ export const getMessageError = createSelector(
   (state: State) => state.error
 );
 
-export const getAllMessage = createSelector(
-  getMessageState,
-  (state: State) => selectAll(state)
+export const getAllMessage = createSelector(getMessageState, (state: State) =>
+  selectAll(state)
 );
 
 export const getMessageEntities = createSelector(
