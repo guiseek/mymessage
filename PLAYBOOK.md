@@ -382,3 +382,269 @@ UPDATE libs/client/domain/src/index.ts (638 bytes)
 UPDATE libs/client/domain/src/lib/client-domain.module.ts (1011 bytes)
 ✔ Packages installed successfully.
 ```
+>*run*
+>```bash
+>nx add @nrwl/nest
+>```
+
+```bash
+Installing packages for tooling via npm.
+Installed packages for tooling via npm.
+UPDATE .vscode/extensions.json (200 bytes)
+UPDATE package.json (2697 bytes)
+✔ Packages installed successfully.
+```
+>*run*
+>```bash
+>npm audit
+>```
+
+```bash
+                       === npm audit security report ===                        
+                                                                                
+# Run  npm install --save-dev @angular-devkit/build-angular@0.1100.2  to resolve 1 vulnerability
+┌───────────────┬──────────────────────────────────────────────────────────────┐
+│ High          │ Prototype Pollution                                          │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Package       │ object-path                                                  │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Dependency of │ @angular-devkit/build-angular [dev]                          │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ Path          │ @angular-devkit/build-angular > resolve-url-loader >         │
+│               │ adjust-sourcemap-loader > object-path                        │
+├───────────────┼──────────────────────────────────────────────────────────────┤
+│ More info     │ https://npmjs.com/advisories/1573                            │
+└───────────────┴──────────────────────────────────────────────────────────────┘
+
+
+found 1 high severity vulnerability in 2178 scanned packages
+  run `npm audit fix` to fix 1 of them.
+```
+>*run*
+>```bash
+>npm install --save-dev @angular-devkit/build-angular@0.1100.2
+>```
+
+```bash
+Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
+
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: 
+> https://opencollective.com/core-js 
+> https://www.patreon.com/zloirock 
+
+Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
+
+npm WARN codelyzer@5.0.1 requires a peer of @angular/compiler@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.1 requires a peer of @angular/core@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.1 requires a peer of tslint@^5.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @angular-devkit/build-angular@0.1100.2 requires a peer of @angular/compiler-cli@^11.0.0 || ^11.0.0-next but none is installed. You must install peer dependencies yourself.
+npm WARN @ngtools/webpack@11.0.2 requires a peer of @angular/compiler-cli@^11.0.0 || ^11.0.0-next but none is installed. You must install peer dependencies yourself.
+
++ @angular-devkit/build-angular@0.1100.2
+added 61 packages from 62 contributors, removed 26 packages, updated 32 packages and audited 2214 packages in 27.881s
+
+104 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+```
+>*run*
+>```bash
+>ng generate @nrwl/nest:application --name=server --frontendProject=client --linter=tslint --tags=side:server <
+>```
+
+```bash
+CREATE apps/server/tslint.json (97 bytes)
+CREATE apps/server/tsconfig.app.json (237 bytes)
+CREATE apps/server/tsconfig.json (197 bytes)
+CREATE apps/server/src/main.ts (553 bytes)
+CREATE apps/server/src/app/.gitkeep (0 bytes)
+CREATE apps/server/src/assets/.gitkeep (0 bytes)
+CREATE apps/server/src/environments/environment.prod.ts (52 bytes)
+CREATE apps/server/src/environments/environment.ts (53 bytes)
+CREATE apps/server/jest.config.js (319 bytes)
+CREATE apps/server/tsconfig.spec.json (199 bytes)
+CREATE apps/client/proxy.conf.json (79 bytes)
+CREATE apps/server/src/app/app.controller.spec.ts (638 bytes)
+CREATE apps/server/src/app/app.controller.ts (265 bytes)
+CREATE apps/server/src/app/app.module.ts (250 bytes)
+CREATE apps/server/src/app/app.service.spec.ts (501 bytes)
+CREATE apps/server/src/app/app.service.ts (173 bytes)
+UPDATE .vscode/extensions.json (200 bytes)
+UPDATE package.json (2697 bytes)
+UPDATE angular.json (17184 bytes)
+UPDATE nx.json (1389 bytes)
+UPDATE jest.config.js (466 bytes)
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+>*run*
+>```bash
+>npm install --save @nestjs/mongoose mongoose
+>```
+
+```bash
+npm WARN codelyzer@5.0.1 requires a peer of @angular/compiler@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.1 requires a peer of @angular/core@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.1 requires a peer of tslint@^5.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @nestjs/mongoose@7.1.2 requires a peer of @types/mongoose@^5.0.0 but none is installed. You must install peer dependencies yourself.
+
++ mongoose@5.10.16
++ @nestjs/mongoose@7.1.2
+added 23 packages from 17 contributors, removed 1 package and audited 2175 packages in 14.779s
+
+101 packages are looking for funding
+  run `npm fund` for details
+```
+
+>*run*
+>```bash
+>npm install --save-dev @types/mongoose
+>```
+
+```bash
+npm WARN codelyzer@5.0.1 requires a peer of @angular/compiler@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.1 requires a peer of @angular/core@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.1 requires a peer of tslint@^5.0.0 but none is installed. You must install peer dependencies yourself.
+
++ @types/mongoose@5.10.1
+added 3 packages from 73 contributors and audited 2178 packages in 15.158s
+```
+
+>*run*
+>```bash
+>npm install --save @nestjs/swagger swagger-ui-express
+>```
+
+```bash
+npm WARN @angular-devkit/build-angular@0.1100.2 requires a peer of @angular/compiler-cli@^11.0.0 || ^11.0.0-next but none is installed. You must install peer dependencies yourself.
+npm WARN @ngtools/webpack@11.0.2 requires a peer of @angular/compiler-cli@^11.0.0 || ^11.0.0-next but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.1 requires a peer of @angular/compiler@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.1 requires a peer of @angular/core@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.1 requires a peer of tslint@^5.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @nestjs/mapped-types@0.1.1 requires a peer of class-transformer@^0.3.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @nestjs/mapped-types@0.1.1 requires a peer of class-validator@^0.11.1 || ^0.12.0 but none is installed. You must install peer dependencies yourself.
+
++ swagger-ui-express@4.1.5
++ @nestjs/swagger@4.7.5
+added 5 packages from 9 contributors and audited 2219 packages in 26.428s
+
+105 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+```
+
+
+
+
+>*run*
+>```bash
+>npm i --save @nestjs/websockets @nestjs/platform-socket.io
+>```
+
+```bash
+npm WARN @angular-devkit/build-angular@0.1100.2 requires a peer of @angular/compiler-cli@^11.0.0 || ^11.0.0-next but none is installed. You must install peer dependencies yourself.
+npm WARN @nestjs/mapped-types@0.1.1 requires a peer of class-transformer@^0.3.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @nestjs/mapped-types@0.1.1 requires a peer of class-validator@^0.11.1 || ^0.12.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @ngtools/webpack@11.0.2 requires a peer of @angular/compiler-cli@^11.0.0 || ^11.0.0-next but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.1 requires a peer of @angular/compiler@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.1 requires a peer of @angular/core@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.1 requires a peer of tslint@^5.0.0 but none is installed. You must install peer dependencies yourself.
+
++ @nestjs/websockets@7.5.5
++ @nestjs/platform-socket.io@7.5.5
+added 45 packages from 28 contributors, removed 1 package and audited 2272 packages in 18.113s
+
+106 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+```
+
+
+
+>*run*
+>```bash
+>npm i --save-dev @types/socket.io socket.io-client
+>```
+
+```bash
+npm WARN @angular-devkit/build-angular@0.1100.2 requires a peer of @angular/compiler-cli@^11.0.0 || ^11.0.0-next but none is installed. You must install peer dependencies yourself.
+npm WARN @nestjs/mapped-types@0.1.1 requires a peer of class-transformer@^0.3.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @nestjs/mapped-types@0.1.1 requires a peer of class-validator@^0.11.1 || ^0.12.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @ngtools/webpack@11.0.2 requires a peer of @angular/compiler-cli@^11.0.0 || ^11.0.0-next but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.1 requires a peer of @angular/compiler@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.1 requires a peer of @angular/core@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.1 requires a peer of tslint@^5.0.0 but none is installed. You must install peer dependencies yourself.
+
++ @types/socket.io@2.1.11
++ @types/socket.io-client@1.4.34
+added 2 packages from 8 contributors and audited 2274 packages in 15.618s
+
+106 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+```
+
+>*run*
+>```bash
+>ng generate @nrwl/nest:gateway --name=meeting --project=server --directory=app/client/room --flat <
+>```
+
+```bash
+CREATE apps/server/src/app/client/room/meeting.gateway.spec.ts (467 bytes)
+CREATE apps/server/src/app/client/room/meeting.gateway.ts (241 bytes)
+UPDATE apps/server/src/app/client/client.module.ts (909 bytes)
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+
+
+>*run*
+>```bash
+>ng generate @nrwl/node:library --name=entities --directory=core --buildable --importPath=@mymessage/core/entities --linter=tslint <
+>```
+
+
+```bash
+CREATE libs/core/entities/tslint.json (100 bytes)
+CREATE libs/core/entities/README.md (180 bytes)
+CREATE libs/core/entities/tsconfig.json (200 bytes)
+CREATE libs/core/entities/tsconfig.lib.json (232 bytes)
+CREATE libs/core/entities/src/index.ts (37 bytes)
+CREATE libs/core/entities/src/lib/core-entities.spec.ts (173 bytes)
+CREATE libs/core/entities/src/lib/core-entities.ts (69 bytes)
+CREATE libs/core/entities/jest.config.js (347 bytes)
+CREATE libs/core/entities/tsconfig.spec.json (276 bytes)
+CREATE libs/core/entities/package.json (63 bytes)
+UPDATE tsconfig.base.json (1294 bytes)
+UPDATE angular.json (18388 bytes)
+UPDATE nx.json (1436 bytes)
+UPDATE .vscode/extensions.json (200 bytes)
+UPDATE jest.config.js (502 bytes)
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+>*run*
+>```bash
+>
+>```
+
+```bash
+```
+
+
+
+>*run*
+>```bash
+>
+>```
+
+```bash
+```
+

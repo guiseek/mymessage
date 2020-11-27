@@ -65,7 +65,7 @@
           },
           {
             "sourceTag": "domain:client",
-            "onlyDependOnLibsWithTags": ["domain:client", "domain:shared"]
+            "onlyDependOnLibsWithTags": ["domain:client", "domain:shared", "core:entities"]
           }
         ]
       }

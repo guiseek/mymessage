@@ -1,7 +1,9 @@
-export interface User {
+import { UserEntity } from '@mymessage/core/entities';
+
+export class User implements UserEntity {
   id: number;
-  name: string;
-  username?: string;
-  location?: [number, number];
-  description: string;
+  email: string;
+  password: string;
+  nickname?: string;
+  registred = false;
 }

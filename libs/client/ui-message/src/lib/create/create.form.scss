@@ -1,0 +1,24 @@
+:host {
+  display: block;
+}
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-1 {
+  flex: 1;
+}
+.gap-10 {
+  gap: 10px;
+}
+.margin-10 {
+  margin: 10px;
+}
+.float-right {
+  float: right;
+}

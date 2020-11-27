@@ -21,6 +21,20 @@ export class MessageEffects {
     )
   );
 
+  createMessage$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(MessageActions.createMessage),
+      switchMap((action) =>
+        this.messageDataService.create(action.message).pipe(
+          map((message) => MessageActions.createMessageSuccess()),
+          catchError((error) =>
+            of(MessageActions.createMessageFailure({ error }))
+          )
+        )
+      )
+    )
+  );
+
   constructor(
     private actions$: Actions,
     private messageDataService: MessageDataService

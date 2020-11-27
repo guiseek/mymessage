@@ -10,5 +10,7 @@ module.exports = {
     '<rootDir>/libs/client/shell',
     '<rootDir>/libs/client/feature-meeting',
     '<rootDir>/libs/client/util-peer',
+    '<rootDir>/apps/server',
+    '<rootDir>/libs/core/entities',
   ],
 };

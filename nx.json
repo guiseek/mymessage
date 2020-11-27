@@ -53,6 +53,12 @@
     },
     "client-util-peer": {
       "tags": ["domain:client", "type:util"]
+    },
+    "server": {
+      "tags": ["side:server"]
+    },
+    "core-entities": {
+      "tags": ["core:entities"]
     }
   }
 }

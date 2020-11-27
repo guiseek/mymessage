@@ -1,3 +1,5 @@
+import { createMessage } from './../+state/message/message.actions';
+import { Message } from './../entities/message';
 import { Injectable } from '@angular/core';
 
 import { select, Store, Action } from '@ngrx/store';
@@ -15,5 +17,9 @@ export class MessageFacade {
 
   dispatch(action: Action) {
     this.store.dispatch(action);
+  }
+
+  create(message: Message) {
+    this.store.dispatch(createMessage({ message }));
   }
 }

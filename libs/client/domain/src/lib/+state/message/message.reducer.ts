@@ -16,9 +16,14 @@ export interface MessagePartialState {
   readonly [MESSAGE_FEATURE_KEY]: State;
 }
 
+export function selectMessageId(event: Message): string {
+  return event._id;
+}
 export const messageAdapter: EntityAdapter<Message> = createEntityAdapter<
   Message
->();
+>({
+  selectId: selectMessageId,
+});
 
 export const initialState: State = messageAdapter.getInitialState({
   // set initial required properties

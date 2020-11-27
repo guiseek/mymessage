@@ -31,7 +31,8 @@
       "@mymessage/client/feature-meeting": [
         "libs/client/feature-meeting/src/index.ts"
       ],
-      "@mymessage/client/util-peer": ["libs/client/util-peer/src/index.ts"]
+      "@mymessage/client/util-peer": ["libs/client/util-peer/src/index.ts"],
+      "@mymessage/core/entities": ["libs/core/entities/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

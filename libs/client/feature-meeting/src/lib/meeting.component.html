@@ -1,9 +1,7 @@
-<h1>client-meeting</h1>
+<video id="device" controls autoplay #remote></video>
 
-<table class="table">
-  <tr *ngFor="let room of roomList$ | async">
-    <td>{{ room.id }}</td>
-    <td>{{ room.name }}</td>
-    <td>{{ room.description }}</td>
-  </tr>
-</table>
+<aside>
+  <video id="me" controls autoplay #me></video>
+  <button (click)="showRemote()" [disabled]="callActive">Connect</button>
+  <button (click)="hangup()" [disabled]="!callActive">Disconnect</button>
+</aside>

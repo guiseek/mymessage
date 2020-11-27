@@ -2,8 +2,9 @@
 
 <table class="table">
   <tr *ngFor="let message of messageList$ | async">
-    <td>{{ message.id }}</td>
-    <td>{{ message.name }}</td>
-    <td>{{ message.description }}</td>
+    <td>{{ message._id }}</td>
+    <td>{{ message.from }}</td>
+    <td>{{ message.to }}</td>
+    <td>{{ message.content }}</td>
   </tr>
 </table>

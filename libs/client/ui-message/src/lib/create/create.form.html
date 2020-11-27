@@ -1,0 +1,24 @@
+<fieldset>
+  <legend>create works!</legend>
+  <form
+    id="create-message"
+    [formGroup]="form"
+    (ngSubmit)="create.emit(form.value)"
+  >
+    <div class="flex-space-between gap-10 margin-10">
+      <div class="flex-column flex-1">
+        <label for="from">From</label>
+        <input type="text" id="from" autofocus formControlName="from" />
+      </div>
+      <div class="flex-column flex-1">
+        <label for="to">To</label>
+        <input type="text" id="to" formControlName="to" />
+      </div>
+    </div>
+    <div class="flex-column flex-1 margin-10">
+      <label for="content">Content</label>
+      <textarea id="content" formControlName="content"></textarea>
+    </div>
+  </form>
+  <button type="submit" class="margin-10 float-right" form="create-message">Create</button>
+</fieldset>
