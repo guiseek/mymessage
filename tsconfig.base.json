@@ -15,7 +15,20 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@mymessage/client/domain": ["libs/client/domain/src/index.ts"],
+      "@mymessage/client/feature-account": [
+        "libs/client/feature-account/src/index.ts"
+      ],
+      "@mymessage/client/ui-message": ["libs/client/ui-message/src/index.ts"],
+      "@mymessage/client/util-message": [
+        "libs/client/util-message/src/index.ts"
+      ],
+      "@mymessage/client/util-peers": ["libs/client/util-peers/src/index.ts"],
+      "@mymessage/client/feature-message": [
+        "libs/client/feature-message/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

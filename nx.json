@@ -22,5 +22,31 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "client-domain": {
+      "tags": ["domain:client", "type:domain-logic"]
+    },
+    "client": {
+      "tags": ["domain:client", "type:app"]
+    },
+    "client-e2e": {
+      "tags": [],
+      "implicitDependencies": ["client"]
+    },
+    "client-feature-account": {
+      "tags": ["domain:client", "type:feature"]
+    },
+    "client-ui-message": {
+      "tags": ["domain:client", "type:ui"]
+    },
+    "client-util-message": {
+      "tags": ["domain:client", "type:util"]
+    },
+    "client-util-peers": {
+      "tags": ["domain:client", "type:util"]
+    },
+    "client-feature-message": {
+      "tags": ["domain:client", "type:feature"]
+    }
+  }
 }
