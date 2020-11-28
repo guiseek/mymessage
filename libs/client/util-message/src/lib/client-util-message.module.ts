@@ -17,7 +17,7 @@ export class ClientUtilMessageModule {
     return {
       ngModule: ClientUtilMessageModule,
       providers: [
-        { provide: SOCKET_CONFIG_TOKEN, useValue: config ?? {} },
+        { provide: SOCKET_CONFIG_TOKEN, useValue: config || {} },
         {
           provide: WebSocketFacade,
           useFactory: WebSocketFactory,

@@ -11,7 +11,6 @@ import {
   WebRTCPeerConnection,
   getRTCConfiguration,
 } from '@mymessage/client/util-peer';
-import { MeetingFacade, loadRoom } from '@mymessage/client/domain';
 import { WebSocketFacade } from '@mymessage/client/util-message';
 
 const stringify = (obj: object) => JSON.stringify(obj);
@@ -82,11 +81,8 @@ export class MeetingComponent implements OnInit, OnDestroy {
 
       if (sender !== this.senderId) {
         if (isDefined(ice) && notNull(this.peer)) {
-
           this.peer.addIceCandidate(new RTCIceCandidate(ice));
-
         } else if (sdp.type === 'offer') {
-
           this.callActive = true;
 
           this.peer
@@ -115,6 +111,8 @@ export class MeetingComponent implements OnInit, OnDestroy {
       .then((stream) => {
         this.peer.addStream(stream);
         this.localStream = stream;
+        this.me.nativeElement.muted = true;
+        this.showRemote();
       });
   }
 
@@ -124,13 +122,11 @@ export class MeetingComponent implements OnInit, OnDestroy {
         .createOffer()
         .then((offer) => this.peer.setLocalDescription(offer))
         .then(() => {
-
           const message = { sdp: this.peer.localDescription };
           this.send(this.senderId, stringify(message));
 
-          this.remote.nativeElement.muted = true;
+          // this.remote.nativeElement.muted = true;
           this.callActive = true;
-
         });
     } catch (error) {
       this.setUpMeet();

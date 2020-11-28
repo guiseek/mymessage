@@ -593,5 +593,5 @@
       "unitTestRunner": "jest"
     }
   },
-  "defaultProject": "client-domain"
+  "defaultProject": "server"
 }

@@ -1,7 +1,7 @@
 import * as io from 'socket.io-client';
 import { share } from 'rxjs/operators';
 import { Observable } from 'rxjs';
-import { InjectionToken } from '@angular/core';
+import { Injectable, InjectionToken } from '@angular/core';
 
 export interface WebSocketConfig {
   url: string;
@@ -16,6 +16,7 @@ export const SOCKET_CONFIG_TOKEN = new InjectionToken<WebSocketConfig>(
   '__SOCKET_IO_CONFIG__'
 );
 
+@Injectable()
 export class WebSocketFacade {
   subscribersCounter: Record<string, number> = {};
   eventObservables$: Record<string, Observable<any>> = {};

@@ -8,11 +8,11 @@
   }
 
   > aside {
-    border-top-left-radius: 120px;
+    // border-bottom-left-radius: 120px;
     overflow: hidden;
     max-width: 240px;
     position: fixed;
-    bottom: 0;
+    top: 0;
     right: 0;
     > video {
       max-width: 100%;
