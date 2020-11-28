@@ -1,16 +1,16 @@
-import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
-import { User } from './user.schema';
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
+import { Document } from 'mongoose'
+import { User } from './user.schema'
 
-export type RoomDocument = Room & Document;
+export type RoomDocument = Room & Document
 
 @Schema()
 export class Room {
   @Prop()
-  name: string;
+  name: string
 
   @Prop()
-  users: User[];
+  users: User[]
 }
 
-export const RoomSchema = SchemaFactory.createForClass(Room);
+export const RoomSchema = SchemaFactory.createForClass(Room)

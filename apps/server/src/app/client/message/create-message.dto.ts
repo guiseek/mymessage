@@ -1,11 +1,11 @@
-import { ApiProperty } from '@nestjs/swagger';
+import { ApiProperty } from '@nestjs/swagger'
 
 export class CreateMessageDto {
   @ApiProperty()
-  from: string;
+  from: string
 
   @ApiProperty()
-  to: string;
+  to: string
 
   @ApiProperty()
   content: string

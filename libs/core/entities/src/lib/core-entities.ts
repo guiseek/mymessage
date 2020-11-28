@@ -1,4 +1,4 @@
 export function coreEntities(): string {
-  return 'core-entities';
+  return 'core-entities'
 }
-export * from './user.entity';
+export * from './user.entity'

@@ -1,4 +1,4 @@
 export type WebRTCPeerConnection = RTCPeerConnection & {
-  addStream: (stream: MediaStream) => {};
-  onremovestream: Function;
-};
+  addStream: (stream: MediaStream) => {}
+  onremovestream: Function
+}

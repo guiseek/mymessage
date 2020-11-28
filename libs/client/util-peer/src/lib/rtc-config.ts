@@ -5,11 +5,11 @@ export function getOfferConfig(options?: RTCOfferOptions) {
       offerToReceiveVideo: true,
     },
     options ?? {}
-  );
+  )
 }
 
 export function getDataChannelConfig(options?: RTCDataChannelInit) {
-  return Object.assign({ ordered: true }, options ?? {});
+  return Object.assign({ ordered: true }, options ?? {})
 }
 
 export function getRTCConfiguration(): RTCConfiguration {
@@ -18,5 +18,5 @@ export function getRTCConfiguration(): RTCConfiguration {
       { urls: 'stun:stun.services.mozilla.com' },
       { urls: 'stun:stun.l.google.com:19302' },
     ],
-  };
+  }
 }

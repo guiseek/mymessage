@@ -13,5 +13,6 @@ module.exports = {
     '<rootDir>/apps/server',
     '<rootDir>/libs/core/entities',
     '<rootDir>/libs/core/config',
+    '<rootDir>/libs/common/ui-material',
   ],
-};
+}

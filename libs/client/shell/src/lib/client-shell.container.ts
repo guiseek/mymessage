@@ -1,5 +1,5 @@
-import { MeetingFacade, MessageFacade } from '@mymessage/client/domain';
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { MeetingFacade, MessageFacade } from '@mymessage/client/domain'
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core'
 
 @Component({
   templateUrl: './client-shell.container.html',
@@ -7,16 +7,11 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ClientShellContainer implements OnInit {
-  constructor(
-    private meetingFacade: MeetingFacade,
-
-  ) {}
+  constructor(private meetingFacade: MeetingFacade) {}
 
   ngOnInit(): void {}
 
   createRoom() {
-    this.meetingFacade.createRoom({ id: 4, name: '', description: '' });
+    this.meetingFacade.createRoom({ id: 4, name: '', description: '' })
   }
-
-
 }

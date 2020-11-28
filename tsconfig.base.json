@@ -33,7 +33,8 @@
       ],
       "@mymessage/client/util-peer": ["libs/client/util-peer/src/index.ts"],
       "@mymessage/core/entities": ["libs/core/entities/src/index.ts"],
-      "@mymessage/core/config": ["libs/core/config/src/index.ts"]
+      "@mymessage/core/config": ["libs/core/config/src/index.ts"],
+      "@mymessage/common/ui-material": ["libs/common/ui-material/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

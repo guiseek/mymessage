@@ -1,4 +1,4 @@
 export abstract class UserEntity {
-  email: string;
-  password: string;
+  email: string
+  password: string
 }

@@ -1,18 +1,18 @@
-import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-import { Document } from 'mongoose';
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
+import { Document } from 'mongoose'
 
-export type MessageDocument = Message & Document;
+export type MessageDocument = Message & Document
 
 @Schema()
 export class Message {
   @Prop()
-  from: string;
+  from: string
 
   @Prop()
-  to: string;
+  to: string
 
   @Prop()
-  content: string;
+  content: string
 }
 
-export const MessageSchema = SchemaFactory.createForClass(Message);
+export const MessageSchema = SchemaFactory.createForClass(Message)

@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
-import { createEffect, Actions, ofType } from '@ngrx/effects';
-import { catchError, map, switchMap } from 'rxjs/operators';
-import { of } from 'rxjs';
-import * as RoomActions from './room.actions';
-import { RoomDataService } from '../../infrastructure/room.data.service';
+import { Injectable } from '@angular/core'
+import { createEffect, Actions, ofType } from '@ngrx/effects'
+import { catchError, map, switchMap } from 'rxjs/operators'
+import { of } from 'rxjs'
+import * as RoomActions from './room.actions'
+import { RoomDataService } from '../../infrastructure/room.data.service'
 
 @Injectable()
 export class RoomEffects {
@@ -17,7 +17,7 @@ export class RoomEffects {
         )
       )
     )
-  );
+  )
 
   createRoom$ = createEffect(() =>
     this.actions$.pipe(
@@ -29,7 +29,7 @@ export class RoomEffects {
         )
       )
     )
-  );
+  )
 
   constructor(
     private actions$: Actions,

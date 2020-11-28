@@ -382,10 +382,12 @@ UPDATE libs/client/domain/src/index.ts (638 bytes)
 UPDATE libs/client/domain/src/lib/client-domain.module.ts (1011 bytes)
 ✔ Packages installed successfully.
 ```
->*run*
->```bash
->nx add @nrwl/nest
->```
+
+> _run_
+>
+> ```bash
+> nx add @nrwl/nest
+> ```
 
 ```bash
 Installing packages for tooling via npm.
@@ -394,14 +396,16 @@ UPDATE .vscode/extensions.json (200 bytes)
 UPDATE package.json (2697 bytes)
 ✔ Packages installed successfully.
 ```
->*run*
->```bash
->npm audit
->```
+
+> _run_
+>
+> ```bash
+> npm audit
+> ```
 
 ```bash
-                       === npm audit security report ===                        
-                                                                                
+                       === npm audit security report ===
+
 # Run  npm install --save-dev @angular-devkit/build-angular@0.1100.2  to resolve 1 vulnerability
 ┌───────────────┬──────────────────────────────────────────────────────────────┐
 │ High          │ Prototype Pollution                                          │
@@ -420,17 +424,19 @@ UPDATE package.json (2697 bytes)
 found 1 high severity vulnerability in 2178 scanned packages
   run `npm audit fix` to fix 1 of them.
 ```
->*run*
->```bash
->npm install --save-dev @angular-devkit/build-angular@0.1100.2
->```
+
+> _run_
+>
+> ```bash
+> npm install --save-dev @angular-devkit/build-angular@0.1100.2
+> ```
 
 ```bash
 Thank you for using core-js ( https://github.com/zloirock/core-js ) for polyfilling JavaScript standard library!
 
-The project needs your help! Please consider supporting of core-js on Open Collective or Patreon: 
-> https://opencollective.com/core-js 
-> https://www.patreon.com/zloirock 
+The project needs your help! Please consider supporting of core-js on Open Collective or Patreon:
+> https://opencollective.com/core-js
+> https://www.patreon.com/zloirock
 
 Also, the author of core-js ( https://github.com/zloirock ) is looking for a good job -)
 
@@ -448,10 +454,12 @@ added 61 packages from 62 contributors, removed 26 packages, updated 32 packages
 
 found 0 vulnerabilities
 ```
->*run*
->```bash
->ng generate @nrwl/nest:application --name=server --frontendProject=client --linter=tslint --tags=side:server <
->```
+
+> _run_
+>
+> ```bash
+> ng generate @nrwl/nest:application --name=server --frontendProject=client --linter=tslint --tags=side:server <
+> ```
 
 ```bash
 CREATE apps/server/tslint.json (97 bytes)
@@ -479,10 +487,11 @@ UPDATE jest.config.js (466 bytes)
 Terminal will be reused by tasks, press any key to close it.
 ```
 
->*run*
->```bash
->npm install --save @nestjs/mongoose mongoose
->```
+> _run_
+>
+> ```bash
+> npm install --save @nestjs/mongoose mongoose
+> ```
 
 ```bash
 npm WARN codelyzer@5.0.1 requires a peer of @angular/compiler@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
@@ -498,10 +507,11 @@ added 23 packages from 17 contributors, removed 1 package and audited 2175 packa
   run `npm fund` for details
 ```
 
->*run*
->```bash
->npm install --save-dev @types/mongoose
->```
+> _run_
+>
+> ```bash
+> npm install --save-dev @types/mongoose
+> ```
 
 ```bash
 npm WARN codelyzer@5.0.1 requires a peer of @angular/compiler@>=2.3.1 <9.0.0 || >8.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
@@ -512,10 +522,11 @@ npm WARN codelyzer@5.0.1 requires a peer of tslint@^5.0.0 but none is installed.
 added 3 packages from 73 contributors and audited 2178 packages in 15.158s
 ```
 
->*run*
->```bash
->npm install --save @nestjs/swagger swagger-ui-express
->```
+> _run_
+>
+> ```bash
+> npm install --save @nestjs/swagger swagger-ui-express
+> ```
 
 ```bash
 npm WARN @angular-devkit/build-angular@0.1100.2 requires a peer of @angular/compiler-cli@^11.0.0 || ^11.0.0-next but none is installed. You must install peer dependencies yourself.
@@ -536,13 +547,11 @@ added 5 packages from 9 contributors and audited 2219 packages in 26.428s
 found 0 vulnerabilities
 ```
 
-
-
-
->*run*
->```bash
->npm i --save @nestjs/websockets @nestjs/platform-socket.io
->```
+> _run_
+>
+> ```bash
+> npm i --save @nestjs/websockets @nestjs/platform-socket.io
+> ```
 
 ```bash
 npm WARN @angular-devkit/build-angular@0.1100.2 requires a peer of @angular/compiler-cli@^11.0.0 || ^11.0.0-next but none is installed. You must install peer dependencies yourself.
@@ -563,12 +572,11 @@ added 45 packages from 28 contributors, removed 1 package and audited 2272 packa
 found 0 vulnerabilities
 ```
 
-
-
->*run*
->```bash
->npm i --save-dev @types/socket.io socket.io-client
->```
+> _run_
+>
+> ```bash
+> npm i --save-dev @types/socket.io socket.io-client
+> ```
 
 ```bash
 npm WARN @angular-devkit/build-angular@0.1100.2 requires a peer of @angular/compiler-cli@^11.0.0 || ^11.0.0-next but none is installed. You must install peer dependencies yourself.
@@ -589,10 +597,11 @@ added 2 packages from 8 contributors and audited 2274 packages in 15.618s
 found 0 vulnerabilities
 ```
 
->*run*
->```bash
->ng generate @nrwl/nest:gateway --name=meeting --project=server --directory=app/client/room --flat <
->```
+> _run_
+>
+> ```bash
+> ng generate @nrwl/nest:gateway --name=meeting --project=server --directory=app/client/room --flat <
+> ```
 
 ```bash
 CREATE apps/server/src/app/client/room/meeting.gateway.spec.ts (467 bytes)
@@ -602,13 +611,11 @@ UPDATE apps/server/src/app/client/client.module.ts (909 bytes)
 Terminal will be reused by tasks, press any key to close it.
 ```
 
-
-
->*run*
->```bash
->ng generate @nrwl/node:library --name=entities --directory=core --buildable --importPath=@mymessage/core/entities --linter=tslint <
->```
-
+> _run_
+>
+> ```bash
+> ng generate @nrwl/node:library --name=entities --directory=core --buildable --importPath=@mymessage/core/entities --linter=tslint <
+> ```
 
 ```bash
 CREATE libs/core/entities/tslint.json (100 bytes)
@@ -630,10 +637,11 @@ UPDATE jest.config.js (502 bytes)
 Terminal will be reused by tasks, press any key to close it.
 ```
 
->*run*
->```bash
->ng generate @nestjs/schematics:resource --name=chat --path=app --sourceRoot=apps/server/src --type=ws <
->```
+> _run_
+>
+> ```bash
+> ng generate @nestjs/schematics:resource --name=chat --path=app --sourceRoot=apps/server/src --type=ws <
+> ```
 
 ```bash
 ? Would you like to generate CRUD entry points? Yes
@@ -650,11 +658,11 @@ UPDATE apps/server/src/app/app.module.ts (552 bytes)
 Terminal will be reused by tasks, press any key to close it.
 ```
 
-
->*run*
->```bash
->ng generate @schematics/angular:component --name=room --project=client-shell --style=scss --displayBlock --skipTests --type=Container <
->```
+> _run_
+>
+> ```bash
+> ng generate @schematics/angular:component --name=room --project=client-shell --style=scss --displayBlock --skipTests --type=Container <
+> ```
 
 ```bash
 CREATE libs/client/shell/src/lib/room/room.container.scss (28 bytes)
@@ -665,10 +673,11 @@ UPDATE libs/client/shell/src/lib/client-shell.module.ts (940 bytes)
 Terminal will be reused by tasks, press any key to close it.
 ```
 
->*run*
->```bash
->ng generate @schematics/angular:component --name=chat --project=client-shell --style=scss --displayBlock --skipTests --type=Container <
->```
+> _run_
+>
+> ```bash
+> ng generate @schematics/angular:component --name=chat --project=client-shell --style=scss --displayBlock --skipTests --type=Container <
+> ```
 
 ```bash
 CREATE libs/client/shell/src/lib/chat/chat.container.scss (28 bytes)
@@ -679,20 +688,82 @@ UPDATE libs/client/shell/src/lib/client-shell.module.ts (1010 bytes)
 Terminal will be reused by tasks, press any key to close it.
 ```
 
->*run*
->```bash
+> _run_
 >
->```
+> ```bash
+> ng generate @nrwl/angular:library --name=ui-material --style=scss --directory=common --buildable --prefix=mymat --tags=side:client,type:ui
+> ```
 
 ```bash
+CREATE libs/common/ui-material/README.md (160 bytes)
+CREATE libs/common/ui-material/ng-package.json (174 bytes)
+CREATE libs/common/ui-material/package.json (209 bytes)
+CREATE libs/common/ui-material/tsconfig.lib.json (465 bytes)
+CREATE libs/common/ui-material/tsconfig.lib.prod.json (230 bytes)
+CREATE libs/common/ui-material/tslint.json (245 bytes)
+CREATE libs/common/ui-material/src/index.ts (49 bytes)
+CREATE libs/common/ui-material/src/lib/common-ui-material.module.ts (172 bytes)
+CREATE libs/common/ui-material/tsconfig.json (200 bytes)
+CREATE libs/common/ui-material/jest.config.js (771 bytes)
+CREATE libs/common/ui-material/tsconfig.spec.json (236 bytes)
+CREATE libs/common/ui-material/src/test-setup.ts (30 bytes)
+UPDATE package.json (3414 bytes)
+UPDATE angular.json (20629 bytes)
+UPDATE nx.json (1572 bytes)
+UPDATE tsconfig.base.json (1442 bytes)
+UPDATE .vscode/extensions.json (200 bytes)
+UPDATE jest.config.js (577 bytes)
+✔ Packages installed successfully.
+
+Terminal will be reused by tasks, press any key to close it.
 ```
 
-
->*run*
->```bash
+> _run_
 >
->```
+> ```bash
+>
+> ```
 
 ```bash
+
 ```
 
+> _run_
+>
+> ```bash
+>
+> ```
+
+```bash
+
+```
+
+> _run_
+>
+> ```bash
+>
+> ```
+
+```bash
+
+```
+
+> _run_
+>
+> ```bash
+>
+> ```
+
+```bash
+
+```
+
+> _run_
+>
+> ```bash
+>
+> ```
+
+```bash
+
+```

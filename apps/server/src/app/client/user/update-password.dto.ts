@@ -1,21 +1,21 @@
-import { ApiProperty } from '@nestjs/swagger';
+import { ApiProperty } from '@nestjs/swagger'
 
 export class UpdatePasswordDto {
   @ApiProperty()
-  _id: string;
-
-  @ApiProperty({
-    required: true
-  })
-  email: string;
+  _id: string
 
   @ApiProperty({
     required: true,
   })
-  password: string;
+  email: string
 
   @ApiProperty({
     required: true,
   })
-  newPassword: string;
+  password: string
+
+  @ApiProperty({
+    required: true,
+  })
+  newPassword: string
 }

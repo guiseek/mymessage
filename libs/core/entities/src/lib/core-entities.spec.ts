@@ -1,7 +1,7 @@
-import { coreEntities } from './core-entities';
+import { coreEntities } from './core-entities'
 
 describe('coreEntities', () => {
   it('should work', () => {
-    expect(coreEntities()).toEqual('core-entities');
-  });
-});
+    expect(coreEntities()).toEqual('core-entities')
+  })
+})
