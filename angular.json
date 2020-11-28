@@ -579,6 +579,37 @@
           }
         }
       }
+    },
+    "core-config": {
+      "root": "libs/core/config",
+      "sourceRoot": "libs/core/config/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/core/config/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/core/config/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/core/config",
+            "tsConfig": "libs/core/config/tsconfig.lib.json",
+            "packageJson": "libs/core/config/package.json",
+            "main": "libs/core/config/src/index.ts",
+            "assets": ["libs/core/config/*.md"]
+          }
+        }
+      }
     }
   },
   "cli": {

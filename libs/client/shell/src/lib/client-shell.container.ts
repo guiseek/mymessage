@@ -9,7 +9,7 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 export class ClientShellContainer implements OnInit {
   constructor(
     private meetingFacade: MeetingFacade,
-    private messageFacade: MessageFacade
+
   ) {}
 
   ngOnInit(): void {}
@@ -18,11 +18,5 @@ export class ClientShellContainer implements OnInit {
     this.meetingFacade.createRoom({ id: 4, name: '', description: '' });
   }
 
-  sendMessage(message) {
-    console.log(message);
-    this.messageFacade.create(message)
-  }
-  log(data: any) {
-    console.log(data);
-  }
+
 }

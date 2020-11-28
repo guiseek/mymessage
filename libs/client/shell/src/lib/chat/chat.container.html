@@ -1,0 +1,8 @@
+<p>chat works!</p>
+
+<client-message></client-message>
+
+<message-create
+  (valueChanges)="log($event)"
+  (create)="sendMessage($event)"
+></message-create>
