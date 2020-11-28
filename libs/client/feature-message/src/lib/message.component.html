@@ -1,5 +1,9 @@
 <h1>client-message</h1>
 
+<form action="">
+  <pre>{{ form.value | json }}</pre>
+</form>
+
 <table class="table">
   <tr *ngFor="let message of messageList$ | async">
     <td>{{ message._id }}</td>

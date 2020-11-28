@@ -6,6 +6,8 @@ import { ClientUiMessageModule } from '@mymessage/client/ui-message';
 import { ClientFeatureAccountModule } from '@mymessage/client/feature-account';
 import { ClientFeatureMessageModule } from '@mymessage/client/feature-message';
 import { ClientFeatureMeetingModule } from '@mymessage/client/feature-meeting';
+import { RoomContainer } from './room/room.container';
+import { ChatContainer } from './chat/chat.container';
 
 @NgModule({
   imports: [
@@ -15,9 +17,22 @@ import { ClientFeatureMeetingModule } from '@mymessage/client/feature-meeting';
     ClientFeatureMessageModule,
     ClientFeatureMeetingModule,
     RouterModule.forChild([
-      { path: '', pathMatch: 'full', component: ClientShellContainer },
+      {
+        path: '', pathMatch: 'full',
+        component: ClientShellContainer,
+        children: [
+          {
+            path: '',
+            component: ChatContainer,
+          },
+          {
+            path: ':room',
+            component: RoomContainer,
+          }
+        ]
+      },
     ]),
   ],
-  declarations: [ClientShellContainer],
+  declarations: [ClientShellContainer, RoomContainer, ChatContainer],
 })
 export class ClientShellModule {}

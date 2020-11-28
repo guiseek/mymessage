@@ -632,12 +632,60 @@ Terminal will be reused by tasks, press any key to close it.
 
 >*run*
 >```bash
+>ng generate @nestjs/schematics:resource --name=chat --path=app --sourceRoot=apps/server/src --type=ws <
+>```
+
+```bash
+? Would you like to generate CRUD entry points? Yes
+CREATE apps/server/src/app/chat/chat.gateway.spec.ts (505 bytes)
+CREATE apps/server/src/app/chat/chat.gateway.ts (992 bytes)
+CREATE apps/server/src/app/chat/chat.module.ts (214 bytes)
+CREATE apps/server/src/app/chat/chat.service.spec.ts (446 bytes)
+CREATE apps/server/src/app/chat/chat.service.ts (607 bytes)
+CREATE apps/server/src/app/chat/dto/create-chat.dto.ts (30 bytes)
+CREATE apps/server/src/app/chat/dto/update-chat.dto.ts (184 bytes)
+CREATE apps/server/src/app/chat/entities/chat.entity.ts (21 bytes)
+UPDATE apps/server/src/app/app.module.ts (552 bytes)
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+
+>*run*
+>```bash
+>ng generate @schematics/angular:component --name=room --project=client-shell --style=scss --displayBlock --skipTests --type=Container <
+>```
+
+```bash
+CREATE libs/client/shell/src/lib/room/room.container.scss (28 bytes)
+CREATE libs/client/shell/src/lib/room/room.container.html (19 bytes)
+CREATE libs/client/shell/src/lib/room/room.container.ts (274 bytes)
+UPDATE libs/client/shell/src/lib/client-shell.module.ts (940 bytes)
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+>*run*
+>```bash
+>ng generate @schematics/angular:component --name=chat --project=client-shell --style=scss --displayBlock --skipTests --type=Container <
+>```
+
+```bash
+CREATE libs/client/shell/src/lib/chat/chat.container.scss (28 bytes)
+CREATE libs/client/shell/src/lib/chat/chat.container.html (19 bytes)
+CREATE libs/client/shell/src/lib/chat/chat.container.ts (274 bytes)
+UPDATE libs/client/shell/src/lib/client-shell.module.ts (1010 bytes)
+
+Terminal will be reused by tasks, press any key to close it.
+```
+
+>*run*
+>```bash
 >
 >```
 
 ```bash
 ```
-
 
 
 >*run*

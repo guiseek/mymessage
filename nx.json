@@ -59,6 +59,9 @@
     },
     "core-entities": {
       "tags": ["core:entities"]
+    },
+    "core-config": {
+      "tags": []
     }
   }
 }

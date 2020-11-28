@@ -12,5 +12,6 @@ module.exports = {
     '<rootDir>/libs/client/util-peer',
     '<rootDir>/apps/server',
     '<rootDir>/libs/core/entities',
+    '<rootDir>/libs/core/config',
   ],
 };
