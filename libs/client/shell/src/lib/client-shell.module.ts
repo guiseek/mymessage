@@ -19,12 +19,16 @@ import { ChatContainer } from './chat/chat.container'
     RouterModule.forChild([
       {
         path: '',
-        pathMatch: 'full',
+        // pathMatch: 'full',
         component: ClientShellContainer,
         children: [
+          // {
+          //   path: '',
+          //   component: ChatContainer,
+          // },
           {
             path: '',
-            component: ChatContainer,
+            component: RoomContainer,
           },
           {
             path: ':room',
