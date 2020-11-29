@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
-import { createEffect, Actions, ofType } from '@ngrx/effects';
-import { catchError, map, switchMap } from 'rxjs/operators';
-import { of } from 'rxjs';
-import * as UserActions from './user.actions';
-import { UserDataService } from '../../infrastructure/user.data.service';
+import { Injectable } from '@angular/core'
+import { createEffect, Actions, ofType } from '@ngrx/effects'
+import { catchError, map, switchMap } from 'rxjs/operators'
+import { of } from 'rxjs'
+import * as UserActions from './user.actions'
+import { UserDataService } from '../../infrastructure/user.data.service'
 
 @Injectable()
 export class UserEffects {
@@ -17,7 +17,7 @@ export class UserEffects {
         )
       )
     )
-  );
+  )
 
   // selectUser$ = createEffect(() =>
   //   this.actions$.pipe(

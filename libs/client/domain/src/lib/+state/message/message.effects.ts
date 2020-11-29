@@ -1,9 +1,9 @@
-import { Injectable } from '@angular/core';
-import { createEffect, Actions, ofType } from '@ngrx/effects';
-import { catchError, map, switchMap } from 'rxjs/operators';
-import { of } from 'rxjs';
-import * as MessageActions from './message.actions';
-import { MessageDataService } from '../../infrastructure/message.data.service';
+import { Injectable } from '@angular/core'
+import { createEffect, Actions, ofType } from '@ngrx/effects'
+import { catchError, map, switchMap } from 'rxjs/operators'
+import { of } from 'rxjs'
+import * as MessageActions from './message.actions'
+import { MessageDataService } from '../../infrastructure/message.data.service'
 
 @Injectable()
 export class MessageEffects {
@@ -19,7 +19,7 @@ export class MessageEffects {
         )
       )
     )
-  );
+  )
 
   createMessage$ = createEffect(() =>
     this.actions$.pipe(
@@ -33,7 +33,7 @@ export class MessageEffects {
         )
       )
     )
-  );
+  )
 
   constructor(
     private actions$: Actions,

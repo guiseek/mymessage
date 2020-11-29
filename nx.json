@@ -62,6 +62,9 @@
     },
     "core-config": {
       "tags": []
+    },
+    "common-ui-material": {
+      "tags": ["side:client", "type:ui"]
     }
   }
 }

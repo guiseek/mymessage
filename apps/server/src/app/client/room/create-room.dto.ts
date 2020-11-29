@@ -1,10 +1,10 @@
-import { User } from './../../schemas/user.schema';
-import { ApiProperty } from '@nestjs/swagger';
+import { User } from './../../schemas/user.schema'
+import { ApiProperty } from '@nestjs/swagger'
 
 export class CreateRoomDto {
   @ApiProperty()
-  name: string;
+  name: string
 
   @ApiProperty()
-  users: User[] = [];
+  users: User[] = []
 }

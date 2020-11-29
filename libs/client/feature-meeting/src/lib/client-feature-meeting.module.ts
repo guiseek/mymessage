@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ClientDomainModule } from '@mymessage/client/domain';
-import { ClientUtilMessageModule } from '@mymessage/client/util-message';
-import { MeetingComponent } from './meeting.component';
+import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
+import { ClientDomainModule } from '@mymessage/client/domain'
+import { ClientUtilMessageModule } from '@mymessage/client/util-message'
+import { MeetingComponent } from './meeting.component'
 
 @NgModule({
   imports: [
@@ -10,7 +10,7 @@ import { MeetingComponent } from './meeting.component';
     ClientDomainModule,
     ClientUtilMessageModule.forRoot({
       // url: 'http://localhost:3333',
-      url: 'https://webneek-server.herokuapp.com'
+      url: 'https://webneek-server.herokuapp.com',
     }),
   ],
   declarations: [MeetingComponent],

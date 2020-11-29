@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { UserEffects } from './+state/user/user.effects';
-import * as fromUser from './+state/user/user.reducer';
-import { StoreModule } from '@ngrx/store';
-import { EffectsModule } from '@ngrx/effects';
-import { MessageEffects } from './+state/message/message.effects';
-import * as fromMessage from './+state/message/message.reducer';
-import { RoomEffects } from './+state/room/room.effects';
-import * as fromRoom from './+state/room/room.reducer';
+import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
+import { UserEffects } from './+state/user/user.effects'
+import * as fromUser from './+state/user/user.reducer'
+import { StoreModule } from '@ngrx/store'
+import { EffectsModule } from '@ngrx/effects'
+import { MessageEffects } from './+state/message/message.effects'
+import * as fromMessage from './+state/message/message.reducer'
+import { RoomEffects } from './+state/room/room.effects'
+import * as fromRoom from './+state/room/room.reducer'
 
 @NgModule({
   imports: [

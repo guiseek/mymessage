@@ -1,11 +1,11 @@
-import { ModuleWithProviders, NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { ModuleWithProviders, NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
 import {
   WebSocketConfig,
   WebSocketFacade,
   WebSocketFactory,
   SOCKET_CONFIG_TOKEN,
-} from './application/web-socket.facade';
+} from './application/web-socket.facade'
 
 @NgModule({
   imports: [CommonModule],
@@ -24,6 +24,6 @@ export class ClientUtilMessageModule {
           deps: [SOCKET_CONFIG_TOKEN],
         },
       ],
-    };
+    }
   }
 }

@@ -1,8 +1,8 @@
-import { WebSocketConfig } from '@mymessage/client/util-message';
-import { InjectionToken } from '@angular/core';
+import { WebSocketConfig } from '@mymessage/client/util-message'
+import { InjectionToken } from '@angular/core'
 
 export function coreConfig(): string {
-  return 'core-config';
+  return 'core-config'
 }
 
-export const SOCKET_CONFIG_CORE = new InjectionToken<WebSocketConfig>('');
+export const SOCKET_CONFIG_CORE = new InjectionToken<WebSocketConfig>('')

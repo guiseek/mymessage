@@ -610,6 +610,48 @@
           }
         }
       }
+    },
+    "common-ui-material": {
+      "projectType": "library",
+      "root": "libs/common/ui-material",
+      "sourceRoot": "libs/common/ui-material/src",
+      "prefix": "mymat",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/common/ui-material/tsconfig.lib.json",
+            "project": "libs/common/ui-material/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/common/ui-material/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common/ui-material/tsconfig.lib.json",
+              "libs/common/ui-material/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/common/ui-material/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/ui-material/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
