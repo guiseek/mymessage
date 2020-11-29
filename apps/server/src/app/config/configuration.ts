@@ -1,5 +1,5 @@
 export const configuration = () => ({
-  database: process.env.DATABASE ?? '',
+  database: process.env.DATABASE ?? 'mongodb://ubuntu.gui/mymessage',
   username: process.env.USERNAME ?? '',
   passowrd: process.env.PASSWORD ?? '',
   hostname: process.env.HOSTNAME ?? 'localhost',

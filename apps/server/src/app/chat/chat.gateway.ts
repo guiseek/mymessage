@@ -3,12 +3,16 @@ import {
   SubscribeMessage,
   MessageBody,
 } from '@nestjs/websockets'
+import { ServerLogger } from '../utilities'
 import { ChatService } from './chat.service'
 import { CreateChatDto } from './dto/create-chat.dto'
 import { UpdateChatDto } from './dto/update-chat.dto'
 
 @WebSocketGateway()
 export class ChatGateway {
+
+  private logger: ServerLogger = new ServerLogger('Chat')
+
   constructor(private readonly chatService: ChatService) {}
 
   @SubscribeMessage('createChat')

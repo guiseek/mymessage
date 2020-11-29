@@ -721,11 +721,27 @@ Terminal will be reused by tasks, press any key to close it.
 > _run_
 >
 > ```bash
->
+>ng generate @nrwl/node:library --name=util-envs --directory=common --buildable --linter=tslint --tags=domain:shared
 > ```
 
 ```bash
+CREATE libs/common/util-envs/tslint.json (100 bytes)
+CREATE libs/common/util-envs/README.md (186 bytes)
+CREATE libs/common/util-envs/tsconfig.json (200 bytes)
+CREATE libs/common/util-envs/tsconfig.lib.json (232 bytes)
+CREATE libs/common/util-envs/src/index.ts (39 bytes)
+CREATE libs/common/util-envs/src/lib/common-util-envs.spec.ts (181 bytes)
+CREATE libs/common/util-envs/src/lib/common-util-envs.ts (73 bytes)
+CREATE libs/common/util-envs/jest.config.js (352 bytes)
+CREATE libs/common/util-envs/tsconfig.spec.json (276 bytes)
+CREATE libs/common/util-envs/package.json (66 bytes)
+UPDATE tsconfig.base.json (1519 bytes)
+UPDATE angular.json (21804 bytes)
+UPDATE nx.json (1637 bytes)
+UPDATE .vscode/extensions.json (200 bytes)
+UPDATE jest.config.js (615 bytes)
 
+Terminal will be reused by tasks, press any key to close it.
 ```
 
 > _run_

@@ -8,10 +8,7 @@ import { MeetingComponent } from './meeting.component'
   imports: [
     CommonModule,
     ClientDomainModule,
-    ClientUtilMessageModule.forRoot({
-      // url: 'http://localhost:3333',
-      url: 'https://webneek-server.herokuapp.com',
-    }),
+    ClientUtilMessageModule,
   ],
   declarations: [MeetingComponent],
   exports: [MeetingComponent],

@@ -10,9 +10,11 @@ import { AppModule } from './app/app.module'
 import { ServerLogger } from './app/utilities/server-logger'
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule)
+  const app = await NestFactory.create(AppModule, {
+    logger: false
+  })
   // const config = app.get(ConfigService);
-  // app.useLogger(app.get(ServerLogger));
+  app.useLogger(app.get(ServerLogger));
 
   const globalPrefix = 'api'
   app.setGlobalPrefix(globalPrefix)

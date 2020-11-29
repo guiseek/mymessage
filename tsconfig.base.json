@@ -16,6 +16,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@envs/*": ["envs/src/*"],
       "@mymessage/client/domain": ["libs/client/domain/src/index.ts"],
       "@mymessage/client/feature-account": [
         "libs/client/feature-account/src/index.ts"

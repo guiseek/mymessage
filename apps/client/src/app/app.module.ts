@@ -1,3 +1,4 @@
+import { ClientUtilMessageModule } from '@mymessage/client/util-message';
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 
@@ -26,6 +27,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
       ],
       { initialNavigation: 'enabled' }
     ),
+    ClientUtilMessageModule.forRoot({
+      url: environment.server
+    }),
     StoreModule.forRoot({}),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
     EffectsModule.forRoot(),

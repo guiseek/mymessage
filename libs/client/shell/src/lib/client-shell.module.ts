@@ -34,6 +34,10 @@ import { ChatContainer } from './chat/chat.container'
             path: ':room',
             component: RoomContainer,
           },
+          // {
+          //   path: '',
+          //   component: ChatContainer,
+          // },
         ],
       },
     ]),
