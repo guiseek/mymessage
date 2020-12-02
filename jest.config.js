@@ -14,5 +14,7 @@ module.exports = {
     '<rootDir>/libs/core/entities',
     '<rootDir>/libs/core/config',
     '<rootDir>/libs/common/ui-material',
+    '<rootDir>/libs/client/feature-workshop',
+    '<rootDir>/libs/client/ui-media',
   ],
 }

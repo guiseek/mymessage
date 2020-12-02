@@ -1,0 +1,9 @@
+<mat-card cdkDragBoundary=".client-meeting" cdkDrag>
+  <mat-card-header cdkDragHandle>
+    <ng-content select="client-video-card-handle"></ng-content>
+  </mat-card-header>
+  <mat-card-content>
+    <ng-content select="video"></ng-content>
+  </mat-card-content>
+  <ng-content select="client-video-card-controls"></ng-content>
+</mat-card>

@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -8px;
+  ::ng-deep .mat-button-base {
+    display: flex;
+    flex: 2;
+    border-radius: 0;
+    // height: 36px;
+    justify-content: center;
+    align-items: center;
+    // margin-left: 0;
+  }
+}
+
+

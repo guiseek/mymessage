@@ -1,0 +1,12 @@
+<ng-template mediaHostRef></ng-template>
+
+<!-- <div [ngComponentOutlet]="" [ngComponentOutletInjector]="{}"></div> -->
+
+<ng-container *ngIf="peer">
+  <video #remote controls playsinline autoplay></video>
+</ng-container>
+
+<ng-container *ngIf="peer">
+  <video #me class="local" controls playsinline autoplay></video>
+</ng-container>
+<button (click)="share()">Share</button>

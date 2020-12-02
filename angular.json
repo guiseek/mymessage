@@ -652,6 +652,93 @@
           "style": "scss"
         }
       }
+    },
+    "client-feature-workshop": {
+      "projectType": "library",
+      "root": "libs/client/feature-workshop",
+      "sourceRoot": "libs/client/feature-workshop/src",
+      "prefix": "client",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/client/feature-workshop/tsconfig.lib.json",
+            "project": "libs/client/feature-workshop/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/client/feature-workshop/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/client/feature-workshop/tsconfig.lib.json",
+              "libs/client/feature-workshop/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/client/feature-workshop/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/client/feature-workshop/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "client-ui-media": {
+      "projectType": "library",
+      "root": "libs/client/ui-media",
+      "sourceRoot": "libs/client/ui-media/src",
+      "prefix": "media",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/client/ui-media/tsconfig.lib.json",
+            "project": "libs/client/ui-media/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/client/ui-media/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/client/ui-media/tsconfig.lib.json",
+              "libs/client/ui-media/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/client/ui-media/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/client/ui-media/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

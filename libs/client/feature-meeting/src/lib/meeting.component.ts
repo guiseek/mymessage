@@ -5,6 +5,7 @@ import {
   OnDestroy,
   ViewChild,
   ElementRef,
+  HostBinding,
 } from '@angular/core'
 import {
   createPeerId,
@@ -25,6 +26,10 @@ const isDefined = (val: any) => val !== undefined
 })
 export class MeetingComponent implements OnInit, OnDestroy {
   callActive = false
+
+  @HostBinding('class.client-meeting') get class() {
+    return true
+  }
 
   peer: WebRTCPeerConnection
 

@@ -20,3 +20,8 @@ export * from './lib/infrastructure/room.data.service'
 export * from './lib/+state/room/room.actions'
 
 export * from './lib/application/meeting.facade'
+
+export * from './lib/entities/topic';
+export * from './lib/infrastructure/topic.data.service';
+
+export * from './lib/application/workshop.facade';

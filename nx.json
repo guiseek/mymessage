@@ -64,7 +64,13 @@
       "tags": []
     },
     "common-ui-material": {
-      "tags": ["side:client", "type:ui"]
+      "tags": ["side:client", "type:ui", "domain:shared"]
+    },
+    "client-feature-workshop": {
+      "tags": ["domain:client", "type:feature"]
+    },
+    "client-ui-media": {
+      "tags": ["domain:client", "type:ui"]
     }
   }
 }

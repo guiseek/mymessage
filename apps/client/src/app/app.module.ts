@@ -8,7 +8,8 @@ import { environment } from '../environments/environment'
 import { EffectsModule } from '@ngrx/effects'
 import { RouterModule } from '@angular/router'
 import { HttpClientModule } from '@angular/common/http'
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ClientFeatureWorkshopModule } from '@mymessage/client/feature-workshop'
 
 @NgModule({
   declarations: [AppComponent],
@@ -32,6 +33,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     HttpClientModule,
     RouterModule,
     BrowserAnimationsModule,
+    ClientFeatureWorkshopModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

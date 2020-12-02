@@ -1,3 +1,4 @@
+import { ClientUtilMessageModule } from '@mymessage/client/util-message';
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { UserEffects } from './+state/user/user.effects'
@@ -12,6 +13,9 @@ import * as fromRoom from './+state/room/room.reducer'
 @NgModule({
   imports: [
     CommonModule,
+    ClientUtilMessageModule.forRoot({
+      url: 'http://localhost:3333',
+    }),
     StoreModule.forFeature(fromUser.USER_FEATURE_KEY, fromUser.reducer),
     EffectsModule.forFeature([UserEffects]),
     StoreModule.forFeature(

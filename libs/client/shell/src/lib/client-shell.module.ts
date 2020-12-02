@@ -6,8 +6,10 @@ import { ClientUiMessageModule } from '@mymessage/client/ui-message'
 import { ClientFeatureAccountModule } from '@mymessage/client/feature-account'
 import { ClientFeatureMessageModule } from '@mymessage/client/feature-message'
 import { ClientFeatureMeetingModule } from '@mymessage/client/feature-meeting'
+import { ClientFeatureWorkshopModule } from '@mymessage/client/feature-workshop';
 import { RoomContainer } from './room/room.container'
-import { ChatContainer } from './chat/chat.container'
+import { ChatContainer } from './chat/chat.container';
+import { WorkshopContainer } from './workshop/workshop.container'
 
 @NgModule({
   imports: [
@@ -16,6 +18,7 @@ import { ChatContainer } from './chat/chat.container'
     ClientFeatureAccountModule,
     ClientFeatureMessageModule,
     ClientFeatureMeetingModule,
+    ClientFeatureWorkshopModule,
     RouterModule.forChild([
       {
         path: '',
@@ -28,7 +31,7 @@ import { ChatContainer } from './chat/chat.container'
           // },
           {
             path: '',
-            component: RoomContainer,
+            component: WorkshopContainer,
           },
           {
             path: ':room',
@@ -38,6 +41,6 @@ import { ChatContainer } from './chat/chat.container'
       },
     ]),
   ],
-  declarations: [ClientShellContainer, RoomContainer, ChatContainer],
+  declarations: [ClientShellContainer, RoomContainer, ChatContainer, WorkshopContainer],
 })
 export class ClientShellModule {}

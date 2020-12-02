@@ -1,7 +1,26 @@
 <video id="device" [controls]="false" autoplay #remote></video>
 
 <aside>
-  <video id="me" controls autoplay #me></video>
-  <button (click)="showRemote()" [disabled]="callActive">Connect</button>
-  <button (click)="hangup()" [disabled]="!callActive">Disconnect</button>
+  <client-video-card>
+    <client-video-card-handle>
+      icon
+    </client-video-card-handle>
+
+    <video id="me" class="local" controls autoplay #me></video>
+
+    <client-video-card-controls>
+      <button #startButton mat-raised-button color="accent" [disabled]="true" (click)="setUpMeet()">
+        <mat-icon>movie</mat-icon>
+      </button>
+      <button #callButton mat-raised-button color="accent">
+        <mat-icon>play_arrow</mat-icon>
+      </button>
+      <button #hangupButton mat-raised-button color="primary" (click)="hangup()">
+        <mat-icon>videocam_off</mat-icon>
+      </button>
+    </client-video-card-controls>
+  </client-video-card>
+
+  <!-- <button (click)="showRemote()" [disabled]="callActive">Connect</button>
+  <button (click)="hangup()" [disabled]="!callActive">Disconnect</button> -->
 </aside>

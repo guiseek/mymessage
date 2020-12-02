@@ -1,25 +1,45 @@
 :host {
   background: black;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   position: relative;
+  align-content: flex-end;
   flex: 1;
   > video {
     height: 100%;
   }
 
   > aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    // gap: 20px;
+    position: relative;
+    client-video-card {
+      // flex: 1;
+      // margin: 40px;
+      max-width: 320px;
+
+      &.local {
+        position: fixed;
+        right: 20px;
+        bottom: 84px;
+      }
+    }
+
+    max-height: 100%;
     // border-bottom-left-radius: 120px;
-    overflow: hidden;
-    max-width: 240px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    > video {
-      max-width: 100%;
-    }
-    > button {
-      width: 50%;
-    }
+    // overflow: hidden;
+    // max-width: 240px;
+    // position: fixed;
+    // top: 0;
+    // right: 0;
+    // > video {
+    //   max-width: 100%;
+    // }
+    // > button {
+    //   width: 50%;
+    // }
   }
 }

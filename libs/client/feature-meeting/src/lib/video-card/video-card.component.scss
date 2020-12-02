@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  .mat-card {
+    padding: 0;
+    overflow: hidden;
+    .mat-card-header.cdk-drah-handle {
+      cursor: grab;
+    }
+    .mat-card-content {
+      margin-bottom: 0;
+      ::ng-deep video {
+        width: 320px;
+      }
+    }
+  }
+}
